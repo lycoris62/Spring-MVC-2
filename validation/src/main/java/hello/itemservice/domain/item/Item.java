@@ -15,7 +15,7 @@ public class Item {
     @NotBlank(message = "상품 이름은 필수입니다.")
     private String itemName;
 
-    @NotNull
+    @NotNull(message = "가격은 필수입니다.")
     @Range(min = 1000, max = 1000000)
     private Integer price;
     @NotNull
